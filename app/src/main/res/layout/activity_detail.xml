@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="what.the.kakaodessert.detail.DetailActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <ImageView
+                    android:id="@+id/imageDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_marginBottom="10dp" />
+
+            <TextView
+                    android:id="@+id/textDetailTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:text="Sample Title" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="50dp"
+                    android:layout_marginBottom="10dp">
+
+                <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Owner"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:id="@+id/textDetailOwnerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textSize="13sp"
+                        tools:text="Hello, good man. Good bye." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="50dp"
+                    android:layout_marginBottom="10dp">
+
+                <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Location"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:id="@+id/textDetailOwnerLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textSize="13sp"
+                        tools:text="Hello, good man. Good bye." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="50dp"
+                    android:layout_marginBottom="10dp">
+
+                <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Views"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:id="@+id/textDetailViews"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textSize="13sp"
+                        tools:text="Hello, good man. Good bye." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="50dp"
+                    android:layout_marginBottom="10dp">
+
+                <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Date"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:id="@+id/textDetailUploadedDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textSize="13sp"
+                        tools:text="Hello, good man. Good bye." />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
