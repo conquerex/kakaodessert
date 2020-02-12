@@ -3,7 +3,10 @@
 
 # KakaoDessert
 
-Flickr Open API에서 얻은 디저트 이미지를 Grid 화면으로 보여준다.
+[![Platform](https://img.shields.io/badge/platform-Android-green.svg) ]()
+[![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21)
+
+> Flickr Open API에서 얻은 디저트 이미지를 Grid 화면으로 보여준다.
 
 ## :baby: Code Convention
 
