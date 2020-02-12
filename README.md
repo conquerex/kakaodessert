@@ -52,5 +52,7 @@ TypeSafe한 HttpClient 라이브러리. OkHttp에 의존
 
 
 ## :baby_chick: Demo
-<img src="https://github.com/conquerex/kakaodessert/blob/master/app/src/main/res/raw/demo_kakaodessert_1.png?raw=true">
-<img src="https://github.com/conquerex/kakaodessert/blob/master/app/src/main/res/raw/demo_kakaodessert_2.png?raw=true">
+<p float="left">
+    <img src="https://github.com/conquerex/kakaodessert/blob/master/app/src/main/res/raw/demo_kakaodessert_1.png?raw=true" />
+    <img src="https://github.com/conquerex/kakaodessert/blob/master/app/src/main/res/raw/demo_kakaodessert_2.png?raw=true" />
+</p>
