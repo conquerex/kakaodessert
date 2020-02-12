@@ -1,29 +1,52 @@
-# SearchKoreanFood
-이미지와 비디오 리스트를 볼 수 있는 Sample App
+# KakaoDessert
 
-## 진행완료된 미션
-1. RecyclerView 를 사용하여 이미지 갤러리 만들기.
-- Restful API 를 사용 : flickr API 사용
-- 통신은 오픈소스 라이브러리 사용 가능 (OkHttp, Retrofit 사용)
+Flickr Open API에서 얻은 디저트 이미지를 Grid 화면으로 보여준다.
 
-2. VideoView 기능 추가.
-- 1번에서 구현한 RecyclerView에 Video를 scroll 상태에 따라 재생하거나 정지할 수 있는 cell을 추가
-- RecyclerView를 scroll하여 Video View가 화면에 나타났을 때, cell 내부의 Video View를 재생
-- RecyclerView를 scroll하여 Video View가 화면에서 사라졌을 때, cell 내부의 Video View를 정지
-- Video View는 오픈소스 라이브러리 사용 가능 (exoPlayer 사용)
-- 보여야하는 Video file의 url을 사용. 내용은 자유롭게 사용 가능
-- 영상을 file 형태로 앱 내부에 저장하는 것은 불가
+## :baby: Code Convention
 
-## 이행하지 못한 미션
-* 디스크 캐시 기능 구현
+- 변수명은 camelCase로 작성한다.
+- API Key와 같이 공개되어서는 안되는 것은 `.gitignore`로 관리한다.
+- 시작 중괄호는 "{" 따로 한줄을 차지하지 않는다.
+- 축약어는 단어처럼 취급할 것.
+- 로깅(Log)은 간결하게.
 
-## 개선 사항
-* 디자인패턴 적용
-* 앱이 백그라운드로 나올 때, 플레이어 중지
-* * Service와 Notification으로 ExoPlayer 제어
-* 영상이 화면 바깥으로 나갔으나 영상은 몇초 후 종료가 됨
-* * 멈추는 방식이 잘못되었거나
-* * 화면 이탈을 제대로 인지하지 못하는 상황
+## :facepunch: Open API : Flickr 
 
-## 시연 영상 (나는 되는데요 방지)
-[https://github.com/conquerex/SearchKoreanFood/blob/master/video_searchKoreanFood.mp4](https://github.com/conquerex/SearchKoreanFood/blob/master/video_searchKoreanFood.mp4)
+디저트 이미지를 Grid 형태의 리스트로 보여주고 각각의 아이템을 클릭하면 상세화면에 진입할 수 있다.
+
+- 아래 메소드를 사용하려면 [REST 요청 형식](https://www.flickr.com/services/api/request.rest.html)을 참고한다.
+- [flickr.photos.search](https://www.flickr.com/services/api/flickr.photos.search.html) : 이미지 검색 메소드
+- [flickr.photos.getInfo](https://www.flickr.com/services/api/flickr.photos.getInfo.html) : 이미지 상세정보 메소드
+- [사진 소스 URL](https://www.flickr.com/services/api/misc.urls.html)은 위 메소드로부터 받을 수 있는 사진 ID, Farm, Server 정보 등을 통해 얻을 수 있다.
+
+```bash
+api_key를 필수로 발급받아야 한다.
+Json으로 response를 받고 싶으면 format과 nojsoncallback를 인자로 받아야 한다.
+Flickr API에서는 모든 데이터가 UTF-8 인코딩되어야 한다.
+```
+
+
+## :pouting_cat: Github branching 
+- 협업이 필요하거나 이슈가 많지 않기에 `master` 브랜치 하나로 진행한다.
+
+
+## :open_file_folder: Open Source
+
+- `square/retrofit`
+TypeSafe한 HttpClient 라이브러리. OkHttp에 의존
+
+- `bumptech/glide`
+이미지 로딩 라이브러리
+
+- `airbnb/lottie-android`
+네이티브 앱에서 high-quality 애니메이션(Json 파일)을 추가.
+
+
+## :whale: Todo
+
+- `SwipeRefreshLayout`으로 최신 데이터를 받을 수 있도록 한다.
+- 최상단으로 이동할 수 있는 버튼틀 추가한다.
+
+
+## :baby_chick: Demo
+
