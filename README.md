@@ -39,12 +39,15 @@ Flickr API에서는 모든 데이터가 UTF-8 인코딩되어야 한다.
 ## :open_file_folder: Open Source
 
 - `square/retrofit`
+
 TypeSafe한 HttpClient 라이브러리. OkHttp에 의존
 
 - `bumptech/glide`
+
 이미지 로딩 라이브러리
 
 - `airbnb/lottie-android`
+
 네이티브 앱에서 high-quality 애니메이션(Json 파일)을 추가.
 
 
