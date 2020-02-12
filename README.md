@@ -1,3 +1,6 @@
+
+<img src="https://github.com/conquerex/kakaodessert/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png?raw=true" width="20%">
+
 # KakaoDessert
 
 Flickr Open API에서 얻은 디저트 이미지를 Grid 화면으로 보여준다.
@@ -49,4 +52,5 @@ TypeSafe한 HttpClient 라이브러리. OkHttp에 의존
 
 
 ## :baby_chick: Demo
-
+<img src="https://github.com/conquerex/kakaodessert/blob/master/app/src/main/res/raw/demo_kakaodessert_1.png?raw=true">
+<img src="https://github.com/conquerex/kakaodessert/blob/master/app/src/main/res/raw/demo_kakaodessert_2.png?raw=true">
